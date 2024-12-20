@@ -1,0 +1,179 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Courier New;}{\f2\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red167\green236\blue33;\red3\green168\blue216;\red254\green168\blue143;\red128\green128\blue128;\red82\green202\blue17;\red23\green198\blue148;\red217\green232\blue247;\red86\green156\blue214;\red206\green145\blue120;\red3\green148\blue190;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 register.html\par
+=====================================\par
+\par
+\cf1\f1\fs28 <!\cf2\b DOCTYPE\cf0\b0  \cf3 html\cf1 >\cf0\par
+\cf4 <\cf2\b html\cf4\b0 >\cf0\par
+\cf4 <\cf2\b head\cf4\b0 >\cf0\par
+\cf4 <\cf2\b meta\cf0\b0  \cf1 charset\cf5 =\cf6\i "ISO-8859-1"\cf4\i0 >\cf0\par
+\cf4 <\cf2\b title\cf4\b0 >\cf7 register\cf4 </\cf2\b title\cf4\b0 >\cf0\par
+\cf4 <\cf2\b script\cf0\b0  \cf1 type\cf5 =\cf6\i "text/javascript"\cf4\i0 >\cf0\par
+\cf7\tab\cf8\b function\cf7\b0  validation() \{\cf0\par
+\par
+\cf7\tab\tab\cf8\b if\cf7\b0  (document.refForm.txtUsername.value.trim() ==\cf9 ""\cf7 )\cf0\par
+\cf7\tab\tab\{\cf0\par
+\cf7\tab\tab\tab alert(\cf9 "please enter username"\cf7 );\cf0\par
+\cf7\tab\tab\cf8\b return\cf7\b0  \cf8\b false\cf7\b0 ;\cf0\par
+\cf7\tab\tab\}\cf0\par
+\cf7\tab\cf8\b if\cf7\b0  (document.refForm.txtPassword.value==\cf9 ""\cf7 )\cf0\par
+\cf7\tab\{\cf0\par
+\par
+\cf7\tab\tab alert(\cf9 "please enter Password"\cf7 );\cf0\par
+\cf7\tab\cf8\b return\cf7\b0  \cf8\b false\cf7\b0 ;\cf0\par
+\cf7\tab\}\cf0\par
+\cf7\tab\cf0\par
+\cf7\tab\cf8\b if\cf7\b0  (document.refForm.txtEmail.value == \cf9 ""\cf7 )\cf0\par
+\cf7\tab\{\cf0\par
+\par
+\cf7\tab\tab alert(\cf9 "please enter Email"\cf7 );\cf0\par
+\cf7\tab\cf8\b return\cf7\b0  \cf8\b false\cf7\b0 ;\cf0\par
+\cf7\tab\}\cf0\par
+\cf7\tab\cf0\par
+\cf7\tab\cf8\b if\cf7\b0 (document.refForm.gender[0].ckecked==\cf8\b false\cf7\b0  && document.refForm.gender[1].ckecked==\cf8\b false\cf7\b0 )\cf0\par
+\cf7\tab\tab\{\cf0\par
+\cf7\tab alert(\cf9 "please select gender"\cf7 );\cf0\par
+\cf7\tab\cf8\b return\cf7\b0  \cf8\b false\cf7\b0 ;\cf0\par
+\cf7\tab\}\cf0\par
+\cf7\tab\cf0\par
+\cf7\tab\cf8\b if\cf7\b0 (document.refForm.age.selectedIndex==0)\{\cf0\par
+\cf7\tab\tab\cf0\par
+\cf7\tab\tab alert(\cf9 "please select age criteria"\cf7 );\cf0\par
+\cf7\tab\tab\cf8\b return\cf7\b0  \cf8\b false\cf7\b0 ;\cf0\par
+\cf7\tab\tab\cf0\par
+\cf7\tab\tab\cf0\par
+\cf7\tab\}\cf0\par
+\cf7\tab\cf0\par
+\cf7\tab\cf8\b if\cf7\b0 (document.refForm.terms.checked==\cf8\b false\cf7\b0 )\{\cf0\par
+\cf7\tab\tab\cf0\par
+\cf7\tab\tab alert(\cf9 "please agree the condition and terms"\cf7 )\cf0\par
+\cf7\tab\tab\cf8\b return\cf7\b0  \cf8\b false\cf7\b0 ;\cf0\par
+\cf7\tab\tab\cf0\par
+\cf7\tab\}\cf0\par
+\cf7\tab\}\cf0\par
+\cf4 </\cf2\b script\cf4\b0 >\cf0\par
+\cf4 </\cf2\b head\cf4\b0 >\cf0\par
+\cf4 <\cf2\b body\cf4\b0 >\cf0\par
+\cf7\tab\cf4 <\cf2\b form\cf0\b0  \cf1 action\cf5 =\cf6\i "myServlet1"\cf0\i0  \cf1 method\cf5 =\cf6\i "get"\cf0\i0  \cf1 onsubmit\cf5 =\cf9 "return validation()"\cf0\par
+\cf7\tab\tab\cf1 name\cf5 =\cf6\i "refForm"\cf4\i0 >\cf0\par
+\cf7\tab\tab\cf4 <\cf2\b table\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\cf4 <\cf2\b tr\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\tab\cf4 <\cf2\b td\cf4\b0 >\cf7 Enter UserName\cf4 </\cf2\b td\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\tab\cf4 <\cf2\b td\cf4\b0 ><\cf2\b input\cf0\b0  \cf1 type\cf5 =\cf6\i "text"\cf0\i0  \cf1 name\cf5 =\cf6\i "txtUsername"\cf4\i0 ></\cf2\b td\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\cf4 </\cf2\b tr\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\cf4 <\cf2\b tr\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\tab\cf4 <\cf2\b td\cf4\b0 >\cf7 Enter password\cf4 </\cf2\b td\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\tab\cf4 <\cf2\b td\cf4\b0 ><\cf2\b input\cf0\b0  \cf1 type\cf5 =\cf6\i "password"\cf0\i0  \cf1 name\cf5 =\cf6\i "txtPassword"\cf4\i0 ></\cf2\b td\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\cf4 </\cf2\b tr\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\cf4 <\cf2\b tr\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\tab\cf4 <\cf2\b td\cf4\b0 >\cf7 Enter Email\cf4 </\cf2\b td\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\tab\cf4 <\cf2\b td\cf4\b0 ><\cf2\b input\cf0\b0  \cf1 type\cf5 =\cf6\i "email"\cf0\i0  \cf1 name\cf5 =\cf6\i "txtEmail"\cf4\i0 ></\cf2\b td\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\cf4 </\cf2\b tr\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\cf4 <\cf2\b tr\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\tab\cf4 <\cf2\b td\cf4\b0 >\cf7 Select Gender\cf4 </\cf2\b td\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\tab\cf4 <\cf2\b td\cf4\b0 >\cf7 Male\cf4 <\cf2\b input\cf0\b0  \cf1 type\cf5 =\cf6\i "radio"\cf0\i0  \cf1 name\cf5 =\cf6\i "gender"\cf0\i0  \cf1 value\cf5 =\cf6\i "male"\cf4\i0 >\cf7 Female\cf4 <\cf2\b input\cf0\b0\par
+\tab\tab\tab\tab\tab\cf1 type\cf5 =\cf6\i "radio"\cf0\i0  \cf1 name\cf5 =\cf6\i "gender"\cf0\i0  \cf1 value\cf5 =\cf6\i "female"\cf4\i0 ></\cf2\b td\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\cf4 </\cf2\b tr\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\cf4 <\cf2\b tr\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\tab\cf4 <\cf2\b td\cf4\b0 >\cf7 Select age group\cf4 </\cf2\b td\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\tab\cf4 <\cf2\b td\cf4\b0 ><\cf2\b select\cf0\b0  \cf1 name\cf5 =\cf6\i "age"\cf4\i0 >\cf0\par
+\cf7\tab\tab\tab\tab\tab\tab\cf4 <\cf2\b option\cf0\b0  \cf1 value\cf5 =\cf6\i "select"\cf0\i0  \cf1 selected\cf5 =\cf6\i "selected"\cf4\i0 >\cf7 Select\cf4 </\cf2\b option\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\tab\tab\tab\cf4 <\cf2\b option\cf0\b0  \cf1 value\cf5 =\cf6\i "21-25"\cf4\i0 >\cf7 21-25\cf4 </\cf2\b option\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\tab\tab\tab\cf4 <\cf2\b option\cf0\b0  \cf1 value\cf5 =\cf6\i "26-30"\cf4\i0 >\cf7 26-30\cf4 </\cf2\b option\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\tab\tab\tab\cf4 <\cf2\b option\cf0\b0  \cf1 value\cf5 =\cf6\i "26-30"\cf4\i0 >\cf7 26-30\cf4 </\cf2\b option\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\tab\cf4 </\cf2\b select\cf4\b0 ></\cf2\b td\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\cf4 </\cf2\b tr\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\cf4 <\cf2\b tr\cf4\b0 >\cf0\par
+\par
+\cf7\tab\tab\tab\tab\cf4 <\cf2\b td\cf4\b0 ><\cf2\b input\cf0\b0  \cf1 type\cf5 =\cf6\i "checkbox"\cf0\i0  \cf1 name\cf5 =\cf6\i "terms"\cf4\i0 ></\cf2\b td\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\tab\cf4 <\cf2\b td\cf4\b0 >\cf7 Agree terms and conditions\cf4 </\cf2\b td\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\cf4 </\cf2\b tr\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\cf4 <\cf2\b tr\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\tab\cf4 <\cf2\b td\cf4\b0 ></\cf2\b td\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\tab\cf4 <\cf2\b td\cf4\b0 ><\cf2\b input\cf0\b0  \cf1 type\cf5 =\cf6\i "submit"\cf0\i0  \cf1 name\cf5 =\cf6\i "submit"\cf0\i0  \cf1 value\cf5 =\cf6\i "register"\cf4\i0 ></\cf2\b td\cf4\b0 >\cf0\par
+\cf7\tab\tab\tab\cf4 </\cf2\b tr\cf4\b0 >\cf0\par
+\cf7\tab\tab\cf4 </\cf2\b table\cf4\b0 >\cf0\par
+\cf7\tab\cf4 </\cf2\b form\cf4\b0 >\cf0\par
+\cf4 </\cf2\b body\cf4\b0 >\cf0\par
+\cf4 </\cf2\b html\cf4\b0 >\par
+\par
+\par
+\par
+\f2\lang16393 ==============================\par
+\par
+\par
+web.xml\par
+\par
+====================================\par
+\par
+\par
+\cf10\f1 <?\cf2\b xml\cf0\b0  \cf1 version\cf5 =\cf6\i "1.0"\cf0\i0  \cf1 encoding\cf5 =\cf6\i "UTF-8"\cf10\i0 ?>\cf0\par
+\cf4 <\cf2\ul\b web-app\cf0\ulnone\b0  \cf1 xmlns:xsi\cf5 =\cf6\i "https://www.w3.org/2001/XMLSchema-instance"\cf0\i0  \cf1 xmlns\cf5 =\cf6\i "https://jakarta.ee/xml/ns/jakartaee"\cf0\i0  \cf1 xsi:schemaLocation\cf5 =\cf6\i "https://jakarta.ee/xml/ns/jakartaee {{\field{\*\fldinst{HYPERLINK https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd }}{\fldrslt{https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd\ul0\cf0}}}}\f1\fs28 "\cf0\i0  \cf1 id\cf5 =\cf6\i "WebApp_ID"\cf0\i0  \cf1 version\cf5 =\cf6\i "6.0"\cf4\i0 >\cf0\par
+\cf7   \cf4 <\cf2\b display-name\cf4\b0 >\cf7 AmarProject\cf4 </\cf2\b display-name\cf4\b0 >\cf0\par
+\cf7   \cf4 <\cf2\b welcome-file-list\cf4\b0 >\cf0\par
+\cf7     \cf4 <\cf2\b welcome-file\cf4\b0 >\cf7 register.html\cf4 </\cf2\b welcome-file\cf4\b0 >\cf0\par
+\par
+\cf7   \cf4 </\cf2\b welcome-file-list\cf4\b0 >\cf0\par
+\cf7   \cf4 <\cf2\b servlet\cf4\b0 >\cf0\par
+\cf7     \cf4 <\cf2\b description\cf4\b0 ></\cf2\b description\cf4\b0 >\cf0\par
+\cf7     \cf4 <\cf2\b display-name\cf4\b0 >\cf7 myServlet1\cf4 </\cf2\b display-name\cf4\b0 >\cf0\par
+\cf7     \cf4 <\cf2\b servlet-name\cf4\b0 >\cf7 myServlet1\cf4 </\cf2\b servlet-name\cf4\b0 >\cf0\par
+\cf7     \cf4 <\cf2\b servlet-class\cf4\b0 >\cf7 com.app.myServlet1\cf4 </\cf2\b servlet-class\cf4\b0 >\cf0\par
+\cf7   \cf4 </\cf2\b servlet\cf0\b0  \cf4 >\cf0\par
+\cf7  \cf0\par
+\cf4 </\cf2\b web-app\cf4\b0 >\par
+\par
+\par
+\par
+\f2 =========================\par
+servlet\par
+\par
+===============================\par
+\par
+package com.app;\par
+\par
+import jakarta.servlet.GenericServlet;\par
+import jakarta.servlet.ServletConfig;\par
+import jakarta.servlet.ServletException;\par
+import jakarta.servlet.ServletRequest;\par
+import jakarta.servlet.ServletResponse;\par
+import jakarta.servlet.annotation.WebServlet;\par
+import java.io.IOException;\par
+import java.io.PrintWriter;\par
+\par
+@WebServlet("/myServlet1")\par
+public class myServlet1 extends GenericServlet \{\par
+\tab private static final long serialVersionUID = 1L;\par
+       \par
+  \par
+    public myServlet1() \{\par
+        super();\par
+        // TODO Auto-generated constructor stub\par
+    \}\par
+\par
+\tab /**\par
+\tab  * @see Servlet#init(ServletConfig)\par
+\tab  */\par
+\tab public void init(ServletConfig config) throws ServletException \{\par
+\tab\tab // TODO Auto-generated method stub\par
+\tab\}\par
+\par
+\tab /**\par
+\tab  * @see Servlet#service(ServletRequest request, ServletResponse response)\par
+\tab  */\par
+\tab public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException \{\par
+\tab\tab PrintWriter pw = response.getWriter();\par
+\tab\tab\par
+\tab\tab response.setContentType("text/html");\par
+\tab\tab\par
+\tab\tab String name = request.getParameter("txtUsername");\par
+\tab\tab String pass = request.getParameter("txtPassword");\par
+\tab\tab\par
+\tab\tab pw.write("name is : "+name+" "+"password is : "+pass);\par
+\par
+\tab\}\par
+\par
+\}\cf0\f0\fs22\lang9\par
+}
+ 
